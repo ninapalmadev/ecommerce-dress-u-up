@@ -1,0 +1,21 @@
+.rodape{
+    background-color: var(--laranja);
+    padding: 1.5rem;
+}
+
+.rodape__titulo{
+    font-family: var(--fonte-destaque);
+}
+.rodape__lista{
+    
+}
+.rodape__lista{
+    list-style: none;
+}
+.rodape__links{
+    padding: .5rem;
+}
+.rodape__links a{
+    text-decoration: none;
+    color: var(--branco);
+}
