@@ -1,0 +1,21 @@
+.chamada {
+    background-image: url('../assets/bg-chamada.jpg');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    position: absolute;
+    height: 30vh;
+}
+
+
+.chamada__titulo{
+    background-color:#d9d9d9c7;
+    border-radius: 12px;
+    font-family: var(--fonte-principal);
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    position: relative;
+    text-align: right;
+    text-transform: uppercase;
+    top: .9rem;
+}
