@@ -4,9 +4,10 @@
     background-repeat: no-repeat; 
     background-size: cover;
     position: absolute;
-    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
 }
-
 
 .chamada__titulo{
     background-color:#d9d9d9c7;
@@ -18,4 +19,27 @@
     text-align: right;
     text-transform: uppercase;
     top: .9rem;
+}
+
+.chamada__botao-flex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+}
+
+.chamada__botao--all{
+    background-color: var(--laranja);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    color: var(--branco);
+}
+.chamada__botao--all:hover{
+    background-color: #fe6b3aa5;
+}
+
+.chamada__botao--promos{
+    background-color: var(--azul-claro);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.chamada__botao--promos:hover{
+    background-color: #4F4C4C;
 }
