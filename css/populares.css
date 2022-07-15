@@ -14,3 +14,15 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+@media screen and (min-width: 768px){
+    .populares-flex{
+        justify-content: space-between;
+    }   
+    .populares__titulo{
+        font-size: 1.4rem;
+        margin-bottom: .5rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+}

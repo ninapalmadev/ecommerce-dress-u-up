@@ -18,6 +18,7 @@
 .produtos__card{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin: .4rem 0;
+    width: 100%;
     padding: 1.3rem;
 }
 
@@ -27,4 +28,20 @@
     font-family: var(--fonte-principal);
     font-weight: 400;
     font-size: .9rem;
+}
+
+
+@media screen and (min-width: 768px){
+    .produtos-flex{
+        justify-content: space-between;
+    }
+    .produtos__card{
+        width: 25%;
+    }
+    .produtos__titulo{
+        font-size: 1.4rem;
+    }
+    
+}
+@media screen and (min-width: 1024px) {
 }

@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-    padding-right: 6%;
+    padding-right: 1.5rem;
     padding-left: 6%;
 }
 
@@ -39,4 +39,11 @@ body {
     padding: 1rem 2rem;
     border: 1px solid var(--FE6A3A);
     border-radius: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+    }
 }

@@ -3,27 +3,28 @@
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-content: flex-end;
+    align-items: flex-end;
+    justify-content: space-evenly;
 }
 
 .chamada__titulo{
-    background-color:#d9d9d9c7;
+    background-color:#d9d9d9dc;
     border-radius: 12px;
+    box-sizing: border-box;
     font-family: var(--fonte-principal);
-    padding-top: .75rem;
-    padding-bottom: .75rem;
+    padding: .8rem;
     position: relative;
     text-align: right;
     text-transform: uppercase;
-    top: .9rem;
 }
 
 .chamada__botao-flex{
     display: flex;
     justify-content: space-between;
-    margin-top: 6rem;
+    width: 100%;
 }
 
 .chamada__botao--all{
@@ -41,4 +42,29 @@
 }
 .chamada__botao--promos:hover{
     background-color: #4F4C4C;
+}
+
+@media screen and (min-width: 375px){
+    .chamada{
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .chamada__botao-flex{
+        justify-content: space-around;
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    .chamada{
+        height: 60vh;
+    }
+    .chamada__botao-flex{
+        justify-content: space-around;
+    }
+    .chamada__titulo{
+        font-size: 3rem;
+        top: 2rem;
+    }
 }

@@ -1,13 +1,11 @@
 .rodape{
     background-color: var(--laranja);
-    padding: 1.5rem;
+    padding: 2.5rem;
+    display: flex;
 }
 
 .rodape__titulo{
     font-family: var(--fonte-destaque);
-}
-.rodape__lista{
-    
 }
 .rodape__lista{
     list-style: none;
@@ -18,4 +16,20 @@
 .rodape__links a{
     text-decoration: none;
     color: var(--branco);
+}
+
+@media screen and (min-width: 375px){
+    .rodape{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .rodape{
+        justify-content: space-between;
+       
+    }
+}
+@media screen and (min-width: 1024px) {
+
 }
