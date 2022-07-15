@@ -1,0 +1,10 @@
+.quebraLinha{
+    border-bottom: 1px solid var(--cinza-claro);
+}
+
+.quebraLinha__texto{
+    font-family: var(--fonte-destaque);
+    font-size: 2rem;
+    padding: 1.5rem;
+    text-align: justify;
+}

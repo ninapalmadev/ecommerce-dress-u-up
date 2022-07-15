@@ -13,12 +13,12 @@
 .produtos-flex{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .produtos__card{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin: .4rem 0;
-    width: 100%;
-    padding: 1.5rem;
+    padding: 1.3rem;
 }
 
 .produtos__card .produtos__card--info .produtos__botao{
