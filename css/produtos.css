@@ -36,7 +36,7 @@
         justify-content: space-between;
     }
     .produtos__card{
-        width: 25%;
+        max-width: 25%;
     }
     .produtos__titulo{
         font-size: 1.4rem;
