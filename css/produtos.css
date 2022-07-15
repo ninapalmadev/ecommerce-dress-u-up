@@ -1,0 +1,30 @@
+.produtos{
+    border-bottom: 1px solid var(--cinza-claro);
+    padding-top: 1.5rem;
+    padding-bottom: 1.2rem;
+}
+
+.produtos__titulo{
+    font-family: var(--fonte-principal);
+    font-size: 1.1rem;
+    padding-bottom: 1.2rem;
+    text-align: center;
+}
+.produtos-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.produtos__card{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: .4rem 0;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.produtos__card .produtos__card--info .produtos__botao{
+    background-color: var(--laranja);
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: .9rem;
+}
