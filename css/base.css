@@ -2,6 +2,7 @@
 @import url('./cabecalho.css');
 @import url('./navegacao.css');
 @import url('./chamada.css');
+@import url('./main.css');
 @import url('./produtos.css');
 @import url('./populares.css');
 @import url('./quebraLinha.css');
@@ -41,6 +42,7 @@ body {
     padding: 1rem 2rem;
     border: 1px solid var(--FE6A3A);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {
