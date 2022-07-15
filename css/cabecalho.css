@@ -1,0 +1,24 @@
+.cabecalho{
+    border-bottom: 1px solid var(--cinza-claro);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    width: 100%;
+}
+
+.cabecalho__titulo{
+    color: var(--preto);
+    font-size: 2rem;
+    font-family: var(--fonte-destaque);
+    margin-right: 3.75rem;
+}
+
+.cabecalho__link .cabecalho__carrinho{
+    width: 1.5rem;
+}
+.cabecalho__menu {
+    width: 1.5rem;
+}

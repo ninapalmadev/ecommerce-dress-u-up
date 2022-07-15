@@ -4,81 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/base.css">
     <title>Dress U UP</title>
 </head>
 <body>
-    <header>
-        <div class="busca-icon">
-            <div class="busca-home">
-                <img src="assets/search.png" alt="">
-                <input type="search" name="busca-produtos" id="busca-produtos" placeholder="Busque os produtos aqui">
-            </div>
-            <img src="assets/Ellipse 1.png" alt="">
-        </div>
-        <div class="categorias-nav">
-            <h2>Categorias</h2>
-            <ul class="lista-produtos">
-                <li class="icone-produto">
-                    <img src="assets/shirt.png" alt="">
-                        <p>Camiseta</p>
-                    </img>
-                </li>
-                <li class="icone-produto">
-                    <img src="assets/pants.png" alt="">
-                        <p>Calça</p>
-                    </img>
-                </li>
-                <li class="icone-produto">
-                    <img src="assets/specs.png" alt="">
-                        <p>Óculos</p>
-                    </img>
-                </li>
-                <li class="icone-produto">
-                    <img src="assets/shoes.png" alt="">
-                        <p>Calçados</p>
-                    </img>
-                </li>
-                <li class="icone-produto">
-                    <img src="assets/watch.png" alt="">
-                        <p>Relógios</p>
-                    </img>
-                </li>
-            </ul>
-        </div>
+    <header class="cabecalho container">
+        <h1 class="cabecalho__titulo">DressUUP.</h1>
+        <a href="#" class="cabecalho__link">
+            <img class="cabecalho__carrinho" src="assets/shopping-cart-commerce-svgrepo-com.svg" alt="">
+        </a>
+        <img class="cabecalho__menu" src="assets/menu-svgrepo-com.svg" alt="">
     </header>
-    <main>
-        <section class="produtos-adicionados">
-            <div class="main-produtos">
-                <h2>Produtos Adicionados</h3>
-                <a href="#">Ver todos</a>
-            </div>
-            <div class="card-lista-produtos">
-                <div class="card-main">
-                    <img src="assets/Rectangle 5.png" alt="">
-                    <h3>Nome Produto</h3>
-                    <span>Rf.1000</span>
-                </div>
-                <div class="card-main">
-                    <img src="assets/Rectangle 5.png" alt="">
-                    <h3>Nome Produto</h3>
-                    <span>Rf.1000</span>
-                </div>
-                <div class="card-main">
-                    <img src="assets/Rectangle 5.png" alt="">
-                    <h3>Nome Produto</h3>
-                    <span>Rf.1000</span>
-                </div><div class="card-main">
-                    <img src="assets/Rectangle 5.png" alt="">
-                    <h3>Nome Produto</h3>
-                    <span>Rf.1000</span>
-                </div>
-
-            </div>
-        </section>
-    </main>
-    <footer>
-
-    </footer>
+    <section class="chamada container">
+        <h2 class="chamada__titulo">prepare-se para o melhor</h2>
+    </section>
+        
 </body>
 </html>
