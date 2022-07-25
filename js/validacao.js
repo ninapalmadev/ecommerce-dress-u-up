@@ -1,11 +1,11 @@
-export function valida(input){
+export function valida(input) {
     const tipoDeInput = input.dataset.tipo;
 
-    if(validadores[tipoDeInput]){
+    if (validadores[tipoDeInput]) {
         validadores[tipoDeInput](input);
     }
 
-    if(input.validity.valid){
+    if (input.validity.valid) {
         input.parentElement.classList.remove('input-container--invalido');
         input.parentElement.querySelector('.input-mensagem-erro').innerHTML = '';
     } else {
@@ -23,7 +23,7 @@ const tiposDeErro = [
 
 
 const mensagensDeErro = {
-    nome:{
+    nome: {
         valueMissing: 'O campo nome não pode estar vazio.'
     },
     email: {
@@ -46,18 +46,28 @@ const mensagensDeErro = {
         patternMismatch: 'O CEP digitado não é válido.',
         customError: 'Não foi possível buscar o CEP.'
     },
+    logradouro: {
+        valueMissing: 'O campo logradouro não pode estar vazio.',
+    },
+    cidade: {
+        valueMissing: 'O campo cidade não pode estar vazio.'
+    },
+    estado: {
+        valueMissing: 'O campo Estado não pode estar vazio.'
+    }
 }
 
 const validadores = {
-    dataNascimento:input => validaDataNascimento(input),
-    cpf:input => validaCPF(input),
+    dataNascimento: input => validaDataNascimento(input),
+    cpf: input => validaCPF(input),
+    cep: input => recuperarCEP(input)
 }
 
-function mostraMensagemDeErro(tipoDeInput, input){
-    let mensagem ='';
+function mostraMensagemDeErro(tipoDeInput, input) {
+    let mensagem = '';
 
-    tiposDeErro.forEach(erro =>{
-        if(input.validity[erro]){
+    tiposDeErro.forEach(erro => {
+        if (input.validity[erro]) {
             mensagem = mensagensDeErro[tipoDeInput][erro];
         }
     });
@@ -81,18 +91,18 @@ function maiorQue18(data) {
     return dataMais18 <= dataAtual;
 }
 
-function validaCPF(input){
+function validaCPF(input) {
     const cpfFormatado = input.value.replace(/\D/g, '');
     let mensagem = '';
 
-    if(!checaCPFRepetido(cpfFormatado)){
+    if (!checaCPFRepetido(cpfFormatado)) {
         mensagem = 'O CPF digitado não é válido'
     };
 
     input.setCustomValidity(mensagem);
 }
 
-function checaCPFRepetido(cpf){
+function checaCPFRepetido(cpf) {
     const valoresRepetidos = [
         '00000000000',
         '11111111111',
@@ -108,10 +118,34 @@ function checaCPFRepetido(cpf){
     let cpfValido = true;
 
     valoresRepetidos.forEach(valor => {
-        if(valor ==cpf){
+        if (valor == cpf) {
             cpfValido = false
         };
     });
 
     return cpfValido
 }
+
+function recuperarCEP(input) {
+    const cep = input.value.replace(/\D/g, '');
+    const url = `https://viacep.com.br/ws/${cep}/json/`;
+    const options = {
+        method: 'GET',
+        mode: 'cors',
+        headers: {
+            'content-type': 'application/json;charset=utf-8'
+        }
+    };
+
+    if(!input.validity.patternMismatch && !input.validity.valueMissing){
+        fetch(url, options)
+        .then(response => response.json())
+        .then(data => {
+            if(data.erro){
+                input.setCustomValidity('Não foi possível buscar o CEP');
+                return
+            }
+            
+        })
+    }
+};
