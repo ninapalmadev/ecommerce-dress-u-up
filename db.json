@@ -1,0 +1,18 @@
+{
+  "profile": [
+    {
+      "nome": "fulano",
+      "email": "fulano@email.com",
+      "id": 1
+    }
+  ],
+  "users": [
+    {
+      "name": "Nina Palma",
+      "email": "admin@gmail.com",
+      "senha": "Admin123",
+      "isLogged": false,
+      "isAdmin": true
+    }
+  ]
+}
