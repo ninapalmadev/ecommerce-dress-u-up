@@ -21,7 +21,7 @@
     justify-content: center;
 }
 .produtos__card{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
     margin: .4rem 0;
     width: 100%;
     padding: 1.3rem;
@@ -39,7 +39,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 3rem;
+    margin-left: 1rem;
 }
 
 @media screen and (min-width: 768px){

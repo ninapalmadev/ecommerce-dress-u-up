@@ -1,4 +1,5 @@
 .chamada {
+    align-items: flex-end;
     background-image: url('../assets/bg-chamada.jpg');
     background-position: center; 
     background-repeat: no-repeat; 
@@ -6,8 +7,8 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     justify-content: space-evenly;
+    width: 100vw;
 }
 
 .chamada__titulo{
@@ -16,14 +17,14 @@
     box-sizing: border-box;
     font-family: var(--fonte-principal);
     padding: .8rem;
-    position: relative;
     text-align: right;
     text-transform: uppercase;
 }
 
 .chamada__botao-flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 5rem;
     width: 100%;
 }
 
