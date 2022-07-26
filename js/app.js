@@ -1,4 +1,6 @@
 import { valida } from "./validacao.js";
+// import { buscaProduto } from "./filtroProdutos.js";
+
 
 const inputs = document.querySelectorAll('input');
 
@@ -16,3 +18,4 @@ function toggleMenu(){
 }
 
 menuMobile.addEventListener('click', toggleMenu);
+

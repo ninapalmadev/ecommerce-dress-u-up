@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dress U UP | Produtos</title>
+    <title>Promoções</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/base.css">
@@ -19,7 +19,7 @@
         </form>
         <div class="cabecalho__cadastro">
             <a class="cabecalho__cadastro--link" href="./cadastro_cliente.html">Cadastro</a>
-            <a class="cabecalho__cadastro--link" href="./login.html">Login</a>
+            <a class="cabecalho__cadastro--link" href="./cadastro_cliente.html">Login</a>
         </div>
         <div class="cabecalho__container">
             <a href="./carrinho.html" class="cabecalho__link">
@@ -38,33 +38,14 @@
             </nav>
         </div>
     </header>
-    <footer class="rodape container">
-        <div class="rodape__lista">
-            <h3 class="rodape__titulo">A Dress U Up</h3>
-            <nav>
-                <ul class="rodape__navegacao">
-                    <li class="rodape__link"><a href="#">Sobre</a></li>
-                    <li class="rodape__link"><a href="#">Nossas lojas</a></li>
-                    <li class="rodape__link"><a href="#">Trabalhe conosco</a></li>
-                    <li class="rodape__link"><a href="#">ReclameAqui</a></li>
-                </ul>
-            </nav>
-        </div>
-        <ul class="rodape__social">
-            <li><a href="#" class="rodape__midia"><img src="../assets/facebook.png" alt="Icone do Facebook"></a></li>
-            <li><a href="#" class="rodape__midia"><img src="../assets/twitter.png" alt="Ícone do Twitter"></a></li>
-            <li><a href="#" class="rodape__midia"><img src="../assets/instagram.png" alt="Ícone do Instagram"></a></li>
-        </ul>
-        <nav>
-            <ul class="rodape__navegacao">
-                <li class="rodape__link"><a href="#">Planos</a></li>
-                <li class="rodape__link"><a href="#">Blog</a></li>
-                <li class="rodape__link"><a href="#">Destaques</a></li>
-                <li class="rodape__link"><a href="#">Institucional</a></li>
-                <li class="rodape__link"><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </footer>
-    <script src="../js/app.js" type="module"></script>
+    <main>
+        <form class="login container">
+            <label for="user">Usuário:</label>
+            <input type="text" name="user" id="user">
+            <label for="password">Senha:</label>
+            <input type="password" name="password" id="password">
+            <button class="botao">Entrar</button>
+        </form>
+    </main>
 </body>
 </html>
