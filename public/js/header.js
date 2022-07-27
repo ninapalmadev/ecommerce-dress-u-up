@@ -2,7 +2,7 @@ const createHeader = () => {
     let header = document.querySelector('.cabecalho');
     
     header.innerHTML = `
-        <h1 class="cabecalho__titulo">DressUUP.</h1>
+        <h1 class="cabecalho__titulo"><a href="index.html">DressUUP.</a></h1>
         <input class="cabecalho__busca" type="search" name="busca" id="busca"
         placeholder="Busque aqui seu produto...">
         <div class="cabecalho__cadastro">
