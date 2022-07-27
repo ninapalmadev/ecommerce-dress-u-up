@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto - </title>
+    <link rel="stylesheet" href="../css/base/reset.css">
+    <link rel="stylesheet" href="../css/base/normalize.css">
+    <link rel="stylesheet" href="../css/base/base.css">
+</head>
+<body>
+    <header class="cabecalho container"></header>
+    <nav class="nav container"></nav>
+    <main>
+        <section class="produto-detalhes">
+            <div class="image-slider">
+                <div class="produto-img">
+                    <img class="active" src="../assets/img/product image 1.png" alt="">
+                    <img src="../assets/img/product image 2.png" alt="">
+                    <img src="../assets/img/product image 3.png" alt="">
+                    <img src="../assets/img/product image 4.png" alt="">
+                </div>
+            </div>
+            <div class="details">
+                <h2 class="produto-brand">camisa</h2>
+                <p class="produto-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente laboriosam molestiae amet labore odit rerum consequatur eveniet nihil, facere dolorem cumque, error quo perferendis eligendi minima doloremque non commodi dicta?</p>
+                <span class="price">$99</span>
+                <p class="produto-sub">selecione o tamanho</p>
+                <input type="radio" name="tamanho" value="p" hidden id="p-tamanho">
+                <label for="p-tamanho" class="tamanho-radio-btn check">p</label>
+                <input type="radio" name="tamanho" value="m" hidden id="m-tamanho">
+                <label for="m-tamanho" class="tamanho-radio-btn">m</label>
+                <input type="radio" name="tamanho" value="g" hidden id="g-tamanho">
+                <label for="g-tamanho" class="tamanho-radio-btn">g</label>
+                <input type="radio" name="tamanho" value="gg" hidden id="gg-tamanho">
+                <label for="gg-tamanho" class="tamanho-radio-btn">gg</label>
+
+                <button class="produtos__botao  botao" data-produto>adicionar ao carrinho</button>
+            </div>
+        </section>
+       
+    </main>
+    <footer class="rodape container"></footer>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/produtos.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

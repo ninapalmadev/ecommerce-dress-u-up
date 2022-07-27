@@ -1,0 +1,88 @@
+.produto-detalhes{
+    width: 90%;
+    padding: 2rem;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.image-slider{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    background-image: url('../../assets/img/product\ image\ 1.png');
+    background-size: cover;
+}
+.produto-img{
+    position: absolute;
+    bottom: .5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background-color: var(--branco);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 85px;
+    gap: .5rem;
+    padding: .5rem;
+}
+
+.produto-img img{
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.produto-img img.active{
+    opacity: 0.5;
+}
+
+.details{
+    width: 50%;
+    margin-left: .9rem;
+
+}
+.details .produto-brand{
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+.details .produto-descr{
+    font-size: 1rem;
+    height: auto;
+    margin: .9rem;
+}
+
+.produto-sub{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin: 60px 0 10px;
+    font-weight: 300;
+}
+
+.tamanho-radio-btn{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border: 1px solid var(--laranja);
+    border-radius: 50%;
+    margin: 10px;
+    margin-left: 0;
+    line-height: 80px;
+    color: var(--laranja);
+    cursor: pointer;
+}
+.tamanho-radio-btn.check{
+    background-color: var(--laranja);
+    color: var(--branco);
+}
+
+.details .produtos__botao{
+    background-color: var(--laranja);
+    color: var(--branco);
+    max-width: 300px;
+}

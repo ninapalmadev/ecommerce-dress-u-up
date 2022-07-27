@@ -1,0 +1,13 @@
+.error-img{
+    display: block;
+    margin: 60px auto;
+}
+
+.error-msg{
+    text-align: center;
+    text-transform: uppercase;
+}
+.error-msg a {
+    font-weight: bold;
+    text-decoration: underline;
+}

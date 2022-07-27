@@ -2,6 +2,7 @@
 @import url('./section-produtos.css');
 @import url('./components/quebraLinha.css');
 @import url('./todos-produtos.css');
+@import url('./components/produto-detalhes.css');
 .main{
     padding-top: 1%;
     padding-bottom: 1%;

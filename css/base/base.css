@@ -7,6 +7,7 @@
 @import url('../components/input.css');
 @import url('../components/cadastro_concluido.css');
 @import url('../components/login.css');
+@import url('../components/error.css');
 
 :root{
     --branco: #FFF;
@@ -38,7 +39,7 @@ body {
 
 @media screen and (min-width: 1024px) {
     .container {
-        padding-left: calc((100% - 980px)/2);
-        padding-right: calc((100% - 980px)/2);
+        padding-left: calc((100% - 1200px)/2);
+        padding-right: calc((100% - 1200px)/2);
     }
 }
