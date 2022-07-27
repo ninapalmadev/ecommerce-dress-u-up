@@ -1,56 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/base.css">
-    <title>Dress U UP</title>
+    <title>HOME - DressUUp.</title>
+    <link rel="stylesheet" href="../css/base/reset.css">
+    <link rel="stylesheet" href="../css/base/normalize.css">
+    <link rel="stylesheet" href="../css/base/base.css">
 </head>
-
 <body>
     <header class="cabecalho container">
-        <h1 class="cabecalho__titulo">DressUUP.</h1>
-        <form class="cabecalho__busca-container">
-            <input class="cabecalho__busca" type="search" name="busca" id="busca"
-                placeholder="Busque aqui seu produto...">
-            <button class="cabecalho__botao"><img src="../assets/search-svgrepo-com.svg" alt=""></button>
-        </form>
-        <div class="cabecalho__cadastro">
-            <a class="cabecalho__cadastro--link" href="./cadastro_cliente.html">Cadastro</a>
-            <a class="cabecalho__cadastro--link" href="./login.html">Login</a>
-        </div>
-        <div class="cabecalho__container">
-            <a href="./carrinho.html" class="cabecalho__link">
-                <img class="cabecalho__carrinho" src="../assets/shopping-cart-commerce-svgrepo-com.svg" alt="">
-            </a>
-            <nav class="navegacao__mobile">
-                <img class="cabecalho__menu--mobile" src="../assets/menu-svgrepo-com.svg" alt="" data-tipo="menu">
-                <ul class="navegacao__mobile--menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="cadastro_cliente.html">Cadastre-se</a></li>
-                    <li><a href="todos.html">Produtos</a></li>
-                    <li><a href="promocao.html">Promoções</a></li>
-                    <li><a href="">Contato</a></li>
-                    <li><a href="">Sobre</a></li>
-                </ul>
-            </nav>
-        </div>
     </header>
-    <nav class="navegacao container">
-        <ul class="navegacao__lista">
-            <li><a class="navegacao__link" href="">Item</a></li>
-            <li><a class="navegacao__link" href="">Item</a></li>
-            <li><a class="navegacao__link" href="">Item</a></li>
-            <li><a class="navegacao__link" href="">Item</a></li>
-            <li><a class="navegacao__link" href="">Item</a></li>
-        </ul>
+    <nav class="nav container">
     </nav>
-    <main class="main">
-        <section class="chamada container">
+    <main class="main container">
+        <section class="chamada">
             <h2 class="chamada__titulo">prepare-se para o melhor</h2>
             <div class="chamada__botao-flex">
                 <a href="./todos.html">
@@ -61,91 +26,23 @@
                 </a>
             </div>
         </section>
-        <section class="produtos container">
+        <section class="produtos">
             <div class="produtos__header">
-                <h2 class="produtos__titulo">Novos produtos</h2>
+                <h2 class="produtos__titulo">Produtos</h2>
                 <a href="./todos.html">Ver mais &#x279C;</a>
             </div>
             <div class="produtos-flex">
-                <div class="produtos__card card">
-                    <img src="../assets/clothing-svgrepo-com.svg" alt="">
-                    <div class="produtos__card--info">
-                        <h4 class="produtos__card--titulo">Camisa</h4>
-                        <h3 class="produtos__card--preco">R$70,00</h3>
-                        <p class="produtos__descricao">Descrição do produto aqui</p>
-                        <button class="produtos__botao  botao" data-produto>adicionar ao carrinho</button>
-                    </div>
-                </div>
-                <div class="produtos__card">
-                    <img src="../assets/clothing-svgrepo-com.svg" alt="">
-                    <div class="produtos__card--info">
-                        <h4 class="produtos__card--titulo">Calça</h4>
-                        <h3 class="produtos__card--preco">R$70,00</h3>
-                        <p class="produtos__descricao">Descrição do produto aqui</p>
-                        <button class="produtos__botao  botao" data-produto>adicionar ao carrinho</button>
-                    </div>
-                </div>
-                <div class="produtos__card">
-                    <img src="../assets/clothing-svgrepo-com.svg" alt="">
-                    <div class="produtos__card--info">
-                        <h4 class="produtos__card--titulo">Relógio</h4>
-                        <h3 class="produtos__card--preco">R$70,00</h3>
-                        <p class="produtos__descricao">Descrição do produto aqui</p>
-                        <button class="produtos__botao  botao" data-produto>adicionar ao carrinho</button>
-                    </div>
-                </div>
-                <div class="produtos__card">
-                    <img src="../assets/clothing-svgrepo-com.svg" alt="">
-                    <div class="produtos__card--info">
-                        <h4 class="produtos__card--titulo">Meia</h4>
-                        <h3 class="produtos__card--preco">R$70,00</h3>
-                        <p class="produtos__descricao">Descrição do produto aqui</p>
-                        <button class="produtos__botao  botao" data-produto>adicionar ao carrinho</button>
-                    </div>
-                </div>
             </div>
         </section>
         <div class="quebraLinha container">
             <p class="quebraLinha__texto">Fashion is not about clothes, It is about a look.</p>
         </div>
-        <section class="populares container">
+        <section class="populares produtos container">
             <div class="populares produtos__header">
                 <h2 class="produtos__titulo">Produtos Populares</h2>
                 <a href="./todos.html">Ver mais &#x279C;</a>
             </div>
-            <div class="populares-flex">
-                <div class="produtos__card">
-                    <img src="../assets/clothing-svgrepo-com.svg" alt="">
-                    <div class="produtos__card--info">
-                        <h4 class="produtos__card--titulo">Camisa</h4>
-                        <p class="produtos__descricao">Descrição do produto aqui</p>
-                        <button class="produtos__botao  botao" data-produto>adicionar ao carrinho</button>
-                    </div>
-                </div>
-                <div class="produtos__card">
-                    <img src="../assets/clothing-svgrepo-com.svg" alt="">
-                    <div class="produtos__card--info">
-                        <h4 class="produtos__card--titulo">Camisa</h4>
-                        <p class="produtos__descricao">Descrição do produto aqui</p>
-                        <button class="produtos__botao  botao" data-produto>adicionar ao carrinho</button>
-                    </div>
-                </div>
-                <div class="produtos__card">
-                    <img src="../assets/clothing-svgrepo-com.svg" alt="">
-                    <div class="produtos__card--info">
-                        <h4 class="produtos__card--titulo">Camisa</h4>
-                        <p class="produtos__descricao">Descrição do produto aqui</p>
-                        <button class="produtos__botao  botao" data-produto>adicionar ao carrinho</button>
-                    </div>
-                </div>
-                <div class="produtos__card">
-                    <img src="../assets/clothing-svgrepo-com.svg" alt="">
-                    <div class="produtos__card--info">
-                        <h4 class="produtos__card--titulo">Camisa</h4>
-                        <p class="produtos__descricao">Descrição do produto aqui</p>
-                        <button class="produtos__botao  botao" data-produto>adicionar ao carrinho</button>
-                    </div>
-                </div>
+            <div class="populares-flex produtos-flex">
             </div>
         </section>
     </main>
@@ -162,9 +59,9 @@
             </nav>
         </div>
         <ul class="rodape__social">
-            <li><a href="#" class="rodape__midia"><img src="../assets/facebook.png" alt="Icone do Facebook"></a></li>
-            <li><a href="#" class="rodape__midia"><img src="../assets/twitter.png" alt="Ícone do Twitter"></a></li>
-            <li><a href="#" class="rodape__midia"><img src="../assets/instagram.png" alt="Ícone do Instagram"></a></li>
+            <li><a href="#" class="rodape__midia"><img src="../assets/img/facebook.png" alt="Icone do Facebook"></a></li>
+            <li><a href="#" class="rodape__midia"><img src="../assets/img/twitter.png" alt="Ícone do Twitter"></a></li>
+            <li><a href="#" class="rodape__midia"><img src="../assets/img/instagram.png" alt="Ícone do Instagram"></a></li>
         </ul>
         <nav>
             <ul class="rodape__navegacao">
@@ -176,8 +73,9 @@
             </ul>
         </nav>
     </footer>
-    <script src="../js/app.js" type="module"></script>
-    <script src="../js/adicionaAoCarrinho.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/cards.js"></script>
+    <script type="module" src="../js/app.js"></script>
 </body>
-
 </html>

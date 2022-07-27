@@ -1,5 +1,6 @@
 .quebraLinha{
     border-bottom: 1px solid var(--cinza-claro);
+    margin: auto;
 }
 
 .quebraLinha__texto{
@@ -7,17 +8,4 @@
     font-size: 2rem;
     padding: 1.5rem;
     text-align: justify;
-}
-
-@media screen and (min-width: 375px){
-    
-}
-
-@media screen and (min-width: 768px){
-    .quebraLinha__texto{
-        text-align: center;
-    }
-    
-}
-@media screen and (min-width: 1024px) {
 }

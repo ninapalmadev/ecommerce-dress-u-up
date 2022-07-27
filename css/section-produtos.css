@@ -1,0 +1,31 @@
+.produtos{
+    border-bottom: 1px solid var(--cinza-claro);
+    padding-top: 1.5rem;
+    padding-bottom: 1.2rem;
+}
+.produtos__header{
+    display: flex;
+    justify-content: space-around;
+}
+.produtos__titulo{
+    font-family: var(--fonte-principal);
+    font-size: 1.1rem;
+    padding-bottom: 1.2rem;
+    text-align: center;
+}
+.produtos-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+@media screen and (min-width: 768px){
+    .produtos-flex{
+        justify-content: space-around;
+    }
+}
+@media screen and (min-width: 1020px){
+    .produtos-flex{
+        width: 84vw;
+        justify-content: flex-start;
+    }
+}

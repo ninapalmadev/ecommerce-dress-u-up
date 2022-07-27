@@ -1,0 +1,78 @@
+.cabecalho{
+    align-items: center;
+    background-color: var(--branco);
+    border-bottom: 1px solid var(--cinza-claro);
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: space-between;
+    margin: auto;
+    padding: 1.2rem 1rem;
+    position: sticky;
+    text-decoration: none;
+    width: 100%;
+}
+.cabecalho__titulo{
+    color: var(--preto);
+    font-size: 1rem;
+    margin-right: 0;
+    font-family: var(--fonte-destaque);
+}
+.cabecalho__busca{
+    background-color: var(--azul-claro);
+    background-image: url('../assets/img/search-svgrepo-com.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 95%;
+    border-radius: 30px;
+    height: 40px;
+    margin-left: 10%;
+    padding: 1.2% 3%;
+    width: 100%;
+    order: 5;
+    margin-left: 0;
+}
+.cabecalho__cadastro{
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    gap: .2rem;
+}
+.cabecalho__container{
+    display: flex;
+}
+.cabecalho__container img{
+    height: 2rem;
+    margin-right: .5rem;
+}
+
+@media screen and (min-width: 768px){
+    .cabecalho{
+        padding: 1rem;
+
+    }
+    .cabecalho__titulo{
+        font-size: 1.4rem;
+    }
+    .cabecalho__busca{
+        order: initial;
+        width: 48%;
+        background-position-x: 310px;
+    }
+    .cabecalho__cadastro{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (min-width: 1020px){
+    .cabecalho{
+       padding: 1.5rem;
+    }
+    .cabecalho__busca{
+        background-position-x: 420px;
+    }
+    .cabecalho__cadastro{
+        gap: 1rem;
+    }
+}

@@ -29,10 +29,6 @@
     padding: .5rem;
 }
 
-@media screen and (min-width: 375px){
-    
-}
-
 @media screen and (min-width: 1024px) {
     .rodape{
         justify-content: space-between;

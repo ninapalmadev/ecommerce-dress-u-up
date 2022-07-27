@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap');
+@import url('../header.css');
+@import url('../nav.css');
+@import url('../main.css');
+@import url('../footer.css');
+@import url('../components/cartao.css');
+
+:root{
+    --branco: #FFF;
+    --azul-claro: #DFE3E5;
+    --cinza-escuro: #4F4C4C;
+    --cinza-claro: #D9D9D9;
+    --laranja: #FE6A3A;
+    --preto: #232229; 
+    --fonte-destaque: 'Goldman', cursive;
+    --fonte-principal:'Montserrat', sans-serif;
+    --fonte-secundaria: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.botao {
+    text-align: center;
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+    border: 1px solid var(--laranja);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: calc((100% - 980px)/2);
+        padding-right: calc((100% - 980px)/2);
+    }
+}
