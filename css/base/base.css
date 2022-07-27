@@ -6,6 +6,7 @@
 @import url('../components/cartao.css');
 @import url('../components/input.css');
 @import url('../components/cadastro_concluido.css');
+@import url('../components/login.css');
 
 :root{
     --branco: #FFF;
