@@ -1,15 +1,34 @@
 const express = require('express');
 const admin = require('firebase-admin');
 const bcrypt = require('bcrypt');
-const patch = require('patch');
+const path = require('path');
+
+//declarando path estatico
+let staticPath = path.join(__dirname, "public")
 
 
 //inicializar express.js
-
 const app = express()
+
+//middlewares
+app.use(express.static(staticPath))
 
 //routes
 //home routes
-app.get("/", (request, response) => {
-    response.sendFile(path.join(__dirname, ))
+app.get("/", (req, res) => {
+    res.sendFile(path.join(staticPath, "telas", "index.html"))
+})
+
+//404 route
+app.get('/erro', (req, res) => {
+    res.sendFile(path.join(staticPath, "telas", "erro.html"))
+})
+
+
+app.use((req, res) => {
+    res.redirect('/erro')
+})
+
+app.listen(3000, () => {
+    console.log('Escutando a porta')
 })
