@@ -1,45 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dress U UP | Criar conta</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/base/reset.css">
+    <link rel="stylesheet" href="../css/base/normalize.css">
+    <link rel="stylesheet" href="../css/base/base.css">
 </head>
 
 <body>
-    <header class="cabecalho container">
-        <h1 class="cabecalho__titulo"><a href="index.html" class="cabecalho__titulo">DressUUP.</a></h1>
-        <form class="cabecalho__busca-container">
-            <input class="cabecalho__busca" type="search" name="busca" id="busca"
-                placeholder="Busque aqui seu produto...">
-            <button class="cabecalho__botao"><img src="../assets/search-svgrepo-com.svg" alt=""></button>
-        </form>
-        <div class="cabecalho__cadastro">
-            <a class="cabecalho__cadastro--link" href="./cadastro_cliente.html">Cadastro</a>
-            <a class="cabecalho__cadastro--link" href="./login.html">Login</a>
-        </div>
-        <div class="cabecalho__container">
-            <a href="./carrinho.html" class="cabecalho__link">
-                <img class="cabecalho__carrinho" src="../assets/shopping-cart-commerce-svgrepo-com.svg" alt="">
-            </a>
-            <nav class="navegacao__mobile">
-                <img class="cabecalho__menu--mobile" src="../assets/menu-svgrepo-com.svg" alt="" data-tipo="menu">
-                <ul class="navegacao__mobile--menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="cadastro_cliente.html">Cadastre-se</a></li>
-                    <li><a href="todos.html">Produtos</a></li>
-                    <li><a href="promocao.html">Promoções</a></li>
-                    <li><a href="">Contato</a></li>
-                    <li><a href="">Sobre</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <header class="cabecalho container"></header>
+    <nav class="nav container"></nav>
     <main class="container flex flex--coluna flex--centro">
         <section class="cartao">
             <h2 class="cartao__titulo">Complete seu cadastro</h2>
@@ -111,7 +84,11 @@
             </form>
         </section>
     </main>
+    <footer class="rodape container"></footer>
+    <script src="../js/header.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/cards.js"></script>
     <script type="module" src="../js/app.js"></script>
-    <script type="module" src="../js/cadastraCliente.js"></script>
 </body>
 </html>
