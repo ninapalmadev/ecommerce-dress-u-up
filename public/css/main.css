@@ -3,6 +3,7 @@
 @import url('./components/quebraLinha.css');
 @import url('./todos-produtos.css');
 @import url('./components/produto-detalhes.css');
+@import url('./filtro-busca.css');
 .main{
     padding-top: 1%;
     padding-bottom: 1%;

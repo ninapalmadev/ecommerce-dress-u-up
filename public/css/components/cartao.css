@@ -26,16 +26,6 @@
     padding: .4rem;
     text-align: right;
 }
-.tag-desconto{
-    position: absolute;
-    background-color: var(--branco);
-    padding: .5rem;
-    border-radius: 1rem;
-    color: var(--laranja);
-    right: 10px;
-    top: 10px;
-    text-transform: capitalize;
-}
 
 @media screen and (min-width: 768px){
     .produtos__card{

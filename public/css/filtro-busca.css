@@ -1,0 +1,166 @@
+.filtro {
+    font-size: .9rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--laranja);
+    border-radius: 6px;
+}
+
+.filtro__input {
+    margin: .7rem 0;
+}
+
+.filtro__input input {
+    border: 1px solid var(--laranja);
+    border-radius: 6px;
+    margin: .2rem 0;
+    padding: .4rem;
+    width: 100%;
+}
+
+.filtro__select {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.filtro__select select {
+    background-color: var(--laranja);
+    color: white;
+    padding: .3rem;
+    width: 100%;
+    margin-top: .5rem;
+    border: none;
+    font-size: 14px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.filtro__checked {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.filtro__checked label {
+    display: block;
+    line-height: 40px;
+}
+
+.filtro__checked input {
+    position: relative;
+    top: 13.33333px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    transition: all 0.15s ease-out 0s;
+    background: #cbd1d8;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0.5rem;
+    outline: none;
+    position: relative;
+    z-index: 1000;
+}
+
+.filtro__checked input:hover {
+    background: #9faab7;
+}
+
+.filtro__checked input:checked {
+    background: #40e0d0;
+}
+
+.filtro__checked input:checked::before {
+    width: 40px;
+    height: 40px;
+    display:flex;
+    font-size: 25px;
+    font-weight:bold;
+    position: absolute;
+    align-items:center;
+    justify-content:center;
+    font-family:'Font Awesome 5 Free';
+}
+
+.filtro__checked input:checked::after {
+    -webkit-animation: click-wave 0.65s;
+    -moz-animation: click-wave 0.65s;
+    animation: click-wave 0.65s;
+    background: #40e0d0;
+    content: '';
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+
+.filtro__busca .botao{
+    background-color: var(--laranja);
+    color: white;
+}
+
+.filtro__busca .botao:hover{
+    background-color: #fe6b3aa5;
+    color: #000;
+}
+
+@media screen and (min-width: 768px){
+    .main--todos {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        margin: 1rem .5rem;
+        gap: 2.5rem;
+    }
+    .filtro{
+        width: 200px;
+        padding: .5rem;
+    }
+    .filtro__input {
+        margin: .5rem 0;
+    }
+    .filtro__input input{
+        padding: 1rem;
+    }
+    .filtro__checked{
+        flex-wrap: wrap;
+    }
+    .filtro__checked input{
+        width: 20px;
+
+    }
+
+}
+@media screen and (min-width: 1020px){
+    .filtro{
+        padding: 2rem;
+    }
+    .filtro__input {
+        margin: 1rem 0;
+    }
+    .filtro__input input{
+        padding: 1rem;
+    }
+    .main--todos {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        margin: 2rem 1.5rem;
+        gap: .5rem;
+    }
+    .filtro__select select{
+        font-size: 20px;
+    }
+    .filtro__checked {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin: 1rem 0;
+        max-width: 150px;
+    }
+}

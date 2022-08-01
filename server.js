@@ -19,11 +19,15 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(staticPath, "telas", "index.html"))
 })
 
+//login route
+app.get('/cadastro-cliente', (req, res) => {
+    res.sendFile(path.join(staticPath, "telas", "cadastro-cliente.html"))
+})
+
 //404 route
 app.get('/erro', (req, res) => {
     res.sendFile(path.join(staticPath, "telas", "erro.html"))
 })
-
 
 app.use((req, res) => {
     res.redirect('/erro')

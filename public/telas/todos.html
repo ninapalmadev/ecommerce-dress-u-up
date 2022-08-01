@@ -16,37 +16,43 @@
     <main class="main main--todos">
         <section class="filtro">
             <form class="filtro__busca">
-                <label for="busca-produto">Busque:</label>
-                <input type="search" name="busca-produto" id="busca-produto">
-                <label for="produto">Busque por categoria:</label>
-                <select name="" id="">
-                    <option value="">Item</option>
-                    <option value="">Item</option>
-                    <option value="">Item</option>
-                    <option value="">Item</option>
-                    <option value="">Item</option>
-                </select>
-                <div class="filtro__radio">
-                    <label for="cor">Cor:</label>
+                <div class="filtro__input">
+                    <label for="busca-produto">Busque:</label>
+                    <input type="search" name="busca-produto" id="busca-produto">
+                </div>
+                <div class="filtro__select">
+                    <label for="produto">Busque por categoria:</label>
+                    <select name="" id="">
+                        <option value="">Item</option>
+                        <option value="">Item</option>
+                        <option value="">Item</option>
+                        <option value="">Item</option>
+                        <option value="">Item</option>
+                    </select>
+                </div>
+                <p>Cor</p>
+                <div class="filtro__checked">
+                    <!-- <label for="cor">Cor:</label> -->
                     <label for="">Azul:
-                        <input type="radio" name="" id="">
+                    <input type="checkbox" name="" id="">
                     </label>
                     <label for="">Amarelo:
-                        <input type="radio" name="" id="">
+                        <input type="checkbox" name="" id="">
                     </label>
                     <label for="">Branco:
-                        <input type="radio" name="" id="">
+                        <input type="checkbox" name="" id="">
                     </label>
                     <label for="">Preto:
-                        <input type="radio" name="" id="">
+                        <input type="checkbox" name="" id="">
                     </label>
                     <label for="">Vermelho:
-                        <input type="radio" name="" id="">
+                        <input type="checkbox" name="" id="">
                     </label>
                 </div>
+                <button type="submit" class="botao">Filtrar</button>
             </form>
         </section>
-        <section class="produtos">
+        <section class="produto">
             <h2 class="produtos__titulo">Nossos produtos</h2>
             <div class="produtos--todos">
                 <div class="produtos-flex">
@@ -61,6 +67,5 @@
     <script src="../js/footer.js"></script>
     <script src="../js/cards.js"></script>
     <script type="module" src="../js/app.js"></script>
-    <script src="../js/api.js"></script>
 </body>
 </html>
